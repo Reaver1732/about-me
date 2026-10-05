@@ -3,31 +3,34 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>About Me</title>
+        <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
-        <header>
+        <header id="about">
+            <nav class="site-nav">
+                <a href="#about">About</a>
+                <a href="#studying">Studying</a>
+                <a href="#interests">Interests</a>
+                <a href="#art">Art</a>
+            </nav>
             <h1>About Carsten</h1>
-            <p>Hello, welcome to my webpage!</p>
+            <p class="tagline">Hello, welcome to my webpage!</p>
             <p>My name is Carsten and I am a computer science major with an emphasis on cyber security.</p>
             <p>The purple lion you will see around this page is Reaver, my fursona. He shows up in the art I commission.</p>
         </header>
 
         <main>
-            <figure>
-                <img src="images/reaver-downtown.jpg" alt="Reaver, a purple anthro lion, standing on a city street corner at dusk" width="800" height="1218">
-                <figcaption>Reaver hanging out downtown. Skeb commission by <a href="https://vgen.co/40_Shprot">40_Shprot</a> on Vgen.</figcaption>
-            </figure>
-
-            <section>
+            <section id="studying">
                 <h2>What I'm studying</h2>
                 <p>I am taking a course on Web Programming this semester (CS-120). This page is one of my first projects for it.</p>
             </section>
 
-            <section>
+            <section id="interests">
                 <h2>Interests</h2>
-                <ul>
+                <ul id="list">
                     <li>Video Games, mostly shooters like Valorant, Counter-Strike 2, and Escape from Tarkov</li>
                     <li>Esports, especially watching valorant tournaments</li>
                     <li>Lions</li>
@@ -36,13 +39,22 @@
                 </ul>
             </section>
 
-            <figure>
-                <img src="images/reaver-glasses.jpg" alt="Reaver, a purple anthro lion with glasses, giving a peace sign" width="800" height="1131">
-                <figcaption>My handsome boy. Art by <a href="https://vgen.co/Cressaaa">Cressaaa</a> on VGen.</figcaption>
-            </figure>
+            <section id="art">
+                <h2>Art of Reaver</h2>
+                <div class="gallery">
+                    <figure>
+                        <img src="images/reaver-downtown.jpg" alt="Reaver, a purple anthro lion, standing on a city street corner at dusk" width="800" height="1218">
+                        <figcaption>Reaver hanging out downtown. Skeb commission by <a href="https://vgen.co/40_Shprot">40_Shprot</a> on VGen.</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/reaver-glasses.jpg" alt="Reaver, a purple anthro lion with glasses, giving a peace sign" width="800" height="1131">
+                        <figcaption>My handsome boy. Art by <a href="https://vgen.co/Cressaaa">Cressaaa</a> on VGen.</figcaption>
+                    </figure>
+                </div>
+            </section>
         </main>
 
-        <footer>
+        <footer class="footer">
             <p>All artwork on this page is commissioned and belongs to the credited artists.</p>
             <p>See my projects on <a href="https://github.com/reaver1732">GitHub</a>.</p>
         </footer>
